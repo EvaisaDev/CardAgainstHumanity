@@ -11,8 +11,8 @@
   <name>pyx</name>
 
   <scm>
-    <url>https://github.com/ajanata/PretendYoureXyzzy</url>
-    <connection>scm:git:ssh://git@github.com/ajanata/PretendYoureXyzzy.git</connection>
+    <url>https://github.com/EvaisaGiac/CardAgainstHumanity</url>
+    <connection>scm:git:ssh://git@github.com/EvaisaGiac/CardAgainstHumanity.git</connection>
   </scm>
 
   <properties>
@@ -28,9 +28,9 @@
 
   <developers>
     <developer>
-      <id>ajanata</id>
-      <name>Andy Janata</name>
-      <email>ajanata@gmail.com</email>
+      <id>evaisa</id>
+      <name>Eva Giacosa</name>
+      <email>evagiacosa1@gmail.com</email>
     </developer>
   </developers>
 
