@@ -3,7 +3,6 @@ module MassiveDecks.Scenes.Lobby.UI exposing (view, inviteOverlay)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
-import MassiveDecks.Components.About as About
 import MassiveDecks.Components.Errors as Errors
 import MassiveDecks.Components.QR as QR
 import MassiveDecks.Components.Icon as Icon
@@ -411,20 +410,6 @@ gameMenu model =
                                 , onClick Leave
                                 ]
                                 [ Icon.fwIcon "sign-out", text " Leave Game" ]
-                            ]
-                       , li [ class "mui-divider" ] []
-                       , li []
-                            [ a
-                                [ class "link"
-                                , attribute "tabindex" "0"
-                                , attribute "role" "button"
-                                , onClick (About.show model.init.version |> OverlayMessage)
-                                ]
-                                [ Icon.fwIcon "info-circle", text " About" ]
-                            ]
-                       , li []
-                            [ a [ href url, target "_blank", rel "noopener" ]
-                                [ Icon.fwIcon "bug", text " Report a bug" ]
                             ]
                        ]
                 )

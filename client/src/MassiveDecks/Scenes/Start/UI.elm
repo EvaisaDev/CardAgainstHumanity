@@ -8,7 +8,6 @@ import Html.Keyed as Keyed
 import MassiveDecks.Models.Game as Game
 import MassiveDecks.Components.Tabs as Tabs
 import MassiveDecks.Components.Icon as Icon
-import MassiveDecks.Components.About as About
 import MassiveDecks.Components.Input as Input
 import MassiveDecks.Components.Overlay as Overlay exposing (Overlay)
 import MassiveDecks.Scenes.Start.Models exposing (Model)
@@ -61,20 +60,12 @@ view model =
     in
         div [ id "start-screen" ]
             [ div [ id "start-screen-content", class "mui-panel" ]
-                ([ h1 [ class "mui--divider-bottom" ] [ text "Massive Decks" ]
+                ([ h1 [ class "mui--divider-bottom" ] [ text "Rotten Fruits" ]
                  ]
                     ++ (existingGames model.storage)
                     ++ [ Input.view model.nameInput
                        ]
                     ++ (Tabs.view (renderTab nameEntered gameCodeEntered model) model.tabs)
-                    ++ [ a
-                            [ class "about-link mui--divider-top link"
-                            , attribute "tabindex" "0"
-                            , attribute "role" "button"
-                            , onClick (About.show model.init.version |> OverlayMessage)
-                            ]
-                            [ Icon.icon "question-circle", text " About" ]
-                       ]
                 )
             ]
 
