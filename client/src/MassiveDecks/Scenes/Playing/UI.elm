@@ -75,7 +75,23 @@ gameMenu lobbyModel =
             List.filter (\rule -> List.member rule.id lobbyModel.lobby.config.houseRules) houseRules
     in
         div [ class "action-menu mui-dropdown" ]
-            
+            [ button
+
+            ul [ class "mui-dropdown__menu mui-dropdown__menu--right" ]
+                ([ li []
+                    [ a
+                        [ classList [ ( "link", True ) ]
+                        , title "View previous rounds from the game."
+                        , attribute "tabindex" "0"
+                        , attribute "role" "button"
+                        , onClick ViewHistory
+                        ]
+                        [ Icon.fwIcon "history", text " ", text "Game History" ]
+                    ]
+                 ]
+                    ++ (List.concatMap (gameMenuItems lobbyModel) enabled)
+                )
+            ]
 
 
 gameMenuItems : Lobby.Model -> HouseRule -> List (Html Message)
