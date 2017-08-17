@@ -506,18 +506,19 @@ h6 {
     color: #2196F3;
     background-color: transparent
 }
-.scores-toggle{
+.mui-btn--small{
 	background-color: rgba(0,0,0,0)
 }
-.scores-toggle:active{
+.mui-btn--small:active{
 	background-color: rgba(0,0,0,0)
 }
-.scores-toggle:hover{
+.mui-btn--small:hover{
 	background-color: rgba(0,0,0,0.3)
 }
-.scores-toggle:focus{
-	background-color: rgba(0,0,0,0.5)
+.mui-btn--small:focus{
+	background-color: rgba(0,0,0,0)
 }
+
 .mui-btn--dark {
     color: #FFF;
     background-color: #424242
