@@ -75,9 +75,7 @@ gameMenu lobbyModel =
             List.filter (\rule -> List.member rule.id lobbyModel.lobby.config.houseRules) houseRules
     in
         div [ class "action-menu mui-dropdown" ]
-            [ button
-
-            ul [ class "mui-dropdown__menu mui-dropdown__menu--right" ]
+            [ ul [ class "mui-dropdown__menu mui-dropdown__menu--right" ]
                 ([ li []
                     [ a
                         [ classList [ ( "link", True ) ]
