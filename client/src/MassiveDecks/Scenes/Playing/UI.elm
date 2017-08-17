@@ -82,7 +82,8 @@ gameMenu lobbyModel =
                 ]
                 [ Icon.icon "bars" ]
             , ul [ class "mui-dropdown__menu mui-dropdown__menu--right" ]
-                (
+                ([ li []
+                 ]
                     ++ (List.concatMap (gameMenuItems lobbyModel) enabled)
                 )
             ]
