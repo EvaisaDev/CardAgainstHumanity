@@ -82,17 +82,7 @@ gameMenu lobbyModel =
                 ]
                 [ Icon.icon "bars" ]
             , ul [ class "mui-dropdown__menu mui-dropdown__menu--right" ]
-                ([ li []
-                    [ a
-                        [ classList [ ( "link", True ) ]
-                        , title "View previous rounds from the game."
-                        , attribute "tabindex" "0"
-                        , attribute "role" "button"
-                        , onClick ViewHistory
-                        ]
-                        [ Icon.fwIcon "history", text " ", text "Game History" ]
-                    ]
-                 ]
+                (
                     ++ (List.concatMap (gameMenuItems lobbyModel) enabled)
                 )
             ]
