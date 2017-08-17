@@ -329,6 +329,8 @@ h6 {
 .mui-appbar {
     background-color: #2196F3;
 	background-image: url("/images/wood.png");
+	background-size: 100px;
+	background-repeat: repeat;
     color: #FFF
 }
 .mui-btn {
