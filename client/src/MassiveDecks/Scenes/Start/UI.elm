@@ -74,19 +74,8 @@ view model =
                             , onClick (About.show model.init.version |> OverlayMessage)
                             ]
                             [ Icon.icon "question-circle", text " About" ]
-                       , div [ id "forkongithub" ]
-                            [ div []
-                                [ a [ href "https://github.com/lattyware/massivedecks", target "_blank", rel "noopener" ]
-                                    [ Icon.icon "github", text " Fork me on GitHub" ]
-                                ]
-                            ]
                        ]
                 )
-            , footer []
-                [ a [ href "https://github.com/Lattyware/massivedecks" ]
-                    [ img [ src "images/icon.svg", alt "The Massive Decks logo.", title "Massive Decks" ] [] ]
-                , p [] versionInfo
-                ]
             ]
 
 
