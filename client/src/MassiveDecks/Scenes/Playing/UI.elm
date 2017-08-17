@@ -71,9 +71,11 @@ view lobbyModel round =
 gameMenu : Lobby.Model -> Html Message
 gameMenu lobbyModel =
     let
-
+        enabled =
+            List.filter (\rule -> List.member rule.id lobbyModel.lobby.config.houseRules) houseRules
     in
- 
+        div [ class "action-menu mui-dropdown" ]
+            
 
 
 gameMenuItems : Lobby.Model -> HouseRule -> List (Html Message)
