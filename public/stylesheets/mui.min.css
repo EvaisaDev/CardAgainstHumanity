@@ -474,26 +474,21 @@ h6 {
 }
 .mui-btn--primary {
     color: #FFF;
-    background-color: #2196F3;
-	background-image: url("/images/wood2.png");
-	background-size: 250px
+    background-color: rgba(0,0,0,0.4);
 }
 .mui-btn--primary:active,
 .mui-btn--primary:focus,
 .mui-btn--primary:hover {
     color: #FFF;
-    background-color: #39a1f4;
-	background-image: url("/images/wood3.png");
-	background-size: 250px
+    background-color: rgba(0,0,0,0.5);
 	
 }
 .mui-btn--primary[disabled]:active,
 .mui-btn--primary[disabled]:focus,
 .mui-btn--primary[disabled]:hover {
     color: #FFF;
-    background-color: #2196F3;
-	background-image: url("/images/wood2.png");
-	background-size: 250px
+    background-color: rgba(0,0,0,0.3);
+	
 }
 .mui-btn--primary.mui-btn--flat {
     color: #2196F3;
