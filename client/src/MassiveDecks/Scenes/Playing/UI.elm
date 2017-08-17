@@ -68,7 +68,27 @@ view lobbyModel round =
                 ( [], [ History.view history lobbyModel.lobby.players |> Html.map HistoryMessage ] )
 
 
-
+gameMenu : Lobby.Model -> Html Message
+gameMenu lobbyModel =
+    let
+        enabled =
+            List.filter (\rule -> List.member rule.id lobbyModel.lobby.config.houseRules) houseRules
+    in
+        div [ class "action-menu mui-dropdown" ]
+            [ button
+                [ class "mui-btn mui-btn--small mui-btn--fab"
+                , title "Game actions."
+                , attribute "data-mui-toggle" "dropdown"
+                ]
+                [ Icon.icon "bars" ]
+            , ul [ class "mui-dropdown__menu mui-dropdown__menu--right" ]
+                ([ li []
+                    [ a
+                    ]
+                 ]
+                    ++ (List.concatMap (gameMenuItems lobbyModel) enabled)
+                )
+            ]
 
 
 gameMenuItems : Lobby.Model -> HouseRule -> List (Html Message)
