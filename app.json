@@ -22,7 +22,7 @@
     },
     "APPLICATION_SECRET": {
       "description": "A random secret for security confirmation in the application.",
-      "generator": "Vcur^Yqwclypa@1s4hE^rVxE`050p0`O<b1`Oq]wgecYGdwR]9VjJXFHAvJuzJSO"
+      "generator": "secret"
     },
     "ELM_VERSION": "0.18",
     "ELM_COMPILE": "elm make client/src/MassiveDecks.elm --output public/javascripts/MassiveDecks.js"
