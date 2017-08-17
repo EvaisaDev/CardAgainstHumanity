@@ -65,15 +65,6 @@ contents version =
             , li [] [ a [ href "https://www.muicss.com", target "_blank", rel "noopener" ] [ text "MUI" ] ]
             ]
         ]
-     , p []
-        [ text "Bug reports and contributions are welcome on the "
-        , a [ href "https://github.com/Lattyware/massivedecks", target "_blank", rel "noopener" ] [ text "GitHub repository" ]
-        , text ", where you can find the complete source to the game, under the AGPLv3 license. The game concept "
-        , text "'Cards against Humanity' is used under a "
-        , a [ href "https://creativecommons.org/licenses/by-nc-sa/2.0/", target "_blank", rel "noopener" ] [ text "Creative Commons BY-NC-SA 2.0 license" ]
-        , text " granted by "
-        , a [ href "https://cardsagainsthumanity.com/", target "_blank", rel "noopener" ] [ text "Cards against Humanity" ]
-        ]
      ]
     )
         ++ (if String.isEmpty version then
