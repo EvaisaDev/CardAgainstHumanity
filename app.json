@@ -1,16 +1,16 @@
 {
-  "name": "Massive Decks",
+  "name": "Rotten Fruits",
   "description": "A party game where you play white cards to try and produce the most amusing outcome when combined with the given black card.",
   "keywrods": [
     "game",
     "party",
     "comedy"
   ],
-  "repository": "https://github.com/Lattyware/massivedecks",
+  "repository": "https://github.com/EvaisaGiac/CardAgainstHumanity",
   "env": {
     "MD_HOST": {
       "description": "The hostname Massive Decks will be accessible at.",
-      "value": "yourappname.herokuapp.com"
+      "value": "rottenfruits.herokuapp.com"
     },
     "MD_PATH": {
       "description": "The path Massive Decks will be accessible at.",
@@ -22,7 +22,7 @@
     },
     "APPLICATION_SECRET": {
       "description": "A random secret for security confirmation in the application.",
-      "generator": "secret"
+      "generator": "Vcur^Yqwclypa@1s4hE^rVxE`050p0`O<b1`Oq]wgecYGdwR]9VjJXFHAvJuzJSO"
     },
     "ELM_VERSION": "0.18",
     "ELM_COMPILE": "elm make client/src/MassiveDecks.elm --output public/javascripts/MassiveDecks.js"
