@@ -254,7 +254,7 @@ houseRuleTemplate canNotChangeConfig id_ title icon description buttonText messa
     div [ id id_, class "house-rule" ]
         [ div []
             [ h3 [] [ Icon.icon icon, text " ", text title ]
-            , button [ class "rules-buttons mui-btn mui-btn--small mui-btn--primary", onClick message, disabled canNotChangeConfig ]
+            , button [ class "mui-btn mui-btn--small mui-btn--primary", onClick message, disabled canNotChangeConfig ]
                 [ text buttonText ]
             ]
         , p [] [ text description ]
