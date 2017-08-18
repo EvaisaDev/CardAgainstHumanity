@@ -372,7 +372,7 @@ gameMenu model =
     in
         div [ class "menu mui-dropdown" ]
             [ button
-                [ class "mui-btn mui-btn--small mui-btn--primary dropdown--small"
+                [ class "mui-btn mui-btn--small mui-btn--primary"
                 , attribute "data-mui-toggle" "dropdown"
                 , title "Game menu."
                 ]
