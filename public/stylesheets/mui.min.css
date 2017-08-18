@@ -566,6 +566,9 @@ h6 {
 	background-size: 250px;
 	background-repeat: repeat;		
 }
+.fa-trophy {
+	color:black;
+}
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
 .mui-btn--dark:hover {
