@@ -536,6 +536,36 @@ h6 {
 	background-size: 250px;
 	background-repeat: repeat;
 }
+#info-bar {
+	background-image: url("/images/paper4.png");
+	background-size: 250px;
+	background-repeat: repeat;	
+}
+.mui-dropdown__menu{
+	background-image: url("/images/paper4.png");
+	background-size: 250px;
+	background-repeat: repeat;		
+}
+.notice {
+	background-image: url("/images/paper4.png");
+	background-size: 250px;
+	background-repeat: repeat;			
+}
+.mui-btn--fab {
+	background-image: url("/images/paper4.png");
+	background-size: 250px;
+	background-repeat: repeat;	
+}
+#start-screen-content {
+	background-image: url("/images/paper4.png");
+	background-size: 250px;
+	background-repeat: repeat;		
+}
+#config-content {
+	background-image: url("/images/paper4.png");
+	background-size: 250px;
+	background-repeat: repeat;		
+}
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
 .mui-btn--dark:hover {
