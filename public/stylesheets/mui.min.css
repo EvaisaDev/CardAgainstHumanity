@@ -533,7 +533,8 @@ h6 {
 }
 #scores {
 	background-image: url("/images/paper4.png");
-	background-size: cover;
+	background-size: 250px;
+	background-repeat: repeat;
 }
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
