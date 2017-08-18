@@ -170,6 +170,7 @@ deckList canNotChangeConfig decks loadingDecks deckId =
                     [ ( "!!emptyInfo", tr [] [ td [ colspan 4 ] [ text "No decks have been added yet." ] ] ) ]
                   else
                     []
+                , emptyDeckListInfo ((not canNotChangeConfig) && (List.isEmpty decks) && List.isEmpty loadingDecks)
                 , List.map loadedDeckEntry decks
                 , List.map loadingDeckEntry loadingDecks
                 , if (canNotChangeConfig) then
@@ -207,6 +208,29 @@ loadingDeckEntry deckId =
 deckLink : String -> Html msg
 deckLink id =
     a [ href ("https://www.cardcastgame.com/browse/deck/" ++ id), target "_blank", rel "noopener" ] [ text id ]
+
+
+emptyDeckListInfo : Bool -> List ( String, Html Message )
+emptyDeckListInfo display =
+    if display then
+        [ ( "!!emptyInfo"
+          , tr []
+                [ td [ colspan 4 ]
+                    [ Icon.icon "info-circle"
+                    , a
+                        [ class "link"
+                        , attribute "tabindex" "0"
+                        , attribute "role" "button"
+                        , onClick (ConfigureDecks (Request "CAHBS"))
+                        ]
+                        [ text "Click here to add the default cards" ]
+                    , text "."
+                    ]
+                ]
+          )
+        ]
+    else
+        []
 
 
 houseRule : Bool -> Bool -> HouseRule -> Html Message
@@ -263,11 +287,3 @@ startGameButton notOwner enoughPlayers enoughCards =
             ]
             [ text "Start Game" ]
         ]
-addDefaultButton deckId =
-    [ button
-        [ class "mui-btn mui-btn--primary mui-btn--raised"
-        , onClick (ConfigureDecks (Request "CAHBS"))
-        , title "Add default cards"
-        ]
-        [ text "Add default cards" ]
-    ]
