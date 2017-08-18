@@ -472,42 +472,7 @@ h6 {
     border-radius: 50%;
     z-index: 1
 }
-.scores-toggle {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.4);
-}
-.scores-toggle:active,
-.scores-toggle:focus,
-.scores-toggle:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.5);
-	
-}
-.scores-toggle[disabled]:active,
-.scores-toggle[disabled]:focus,
-.scores-toggle[disabled]:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.3);
-	
-}
-.dropdown--small {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.4);
-}
-.dropdown--small:active,
-.dropdown--small:focus,
-.dropdown--small:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.5);
-	
-}
-.dropdown--small[disabled]:active,
-.dropdown--small[disabled]:focus,
-.dropdown--small[disabled]:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.3);
-	
-}
+
 .mui-btn--primary.mui-btn--flat {
     color: #2196F3;
     background-color: transparent
