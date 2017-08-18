@@ -518,23 +518,10 @@ h6 {
 .mui-btn--small:focus{
 	background-color: rgba(0,0,0,0)
 }
-.rules-buttons {
-	background-color: rgba(0,0,0,0.4);
-}
 
-.rules-buttons:active,
-.rules-buttons:focus,
-.rules-buttons:hover {
 .mui-btn--dark {
     color: #FFF;
     background-color: #424242
-}
-.rules-buttons[disabled]:active,
-.rules-buttons[disabled]:focus,
-.rules-buttons[disabled]:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.3);
-	
 }
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
