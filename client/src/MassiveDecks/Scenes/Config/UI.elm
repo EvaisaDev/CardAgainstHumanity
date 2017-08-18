@@ -263,3 +263,13 @@ startGameButton notOwner enoughPlayers enoughCards =
             ]
             [ text "Start Game" ]
         ]
+startGameButton2 : Bool -> Bool -> Bool -> Html Message
+startGameButton2 notOwner =
+    div [ id "start-game" ]
+        [ 
+        button
+            [ class "mui-btn mui-btn--primary mui-btn--raised"
+            , onClick (ConfigureDecks (Request "CAHBS"))
+            ]
+            [ text "Add default cards" ]
+        ]
