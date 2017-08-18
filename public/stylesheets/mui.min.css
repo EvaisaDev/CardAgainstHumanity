@@ -531,8 +531,9 @@ h6 {
 #next-round-button:hover {
     background-image: url("/images/paper3.png");
 }
-.mui--z1 {
+#scores {
 	background-image: url("/images/paper4.png");
+	background-size: cover;
 }
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
