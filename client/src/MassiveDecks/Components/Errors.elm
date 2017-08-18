@@ -83,7 +83,7 @@ reportUrl applicationInfo message =
         full =
             message ++ "\n\nApplication Info:\n\tVersion: " ++ version ++ "\n\tURL: " ++ applicationInfo.url
     in
-        "" ++ full
+        "https://github.com/evaisa/cardagainsthumanity/issues/new?body=" ++ full
 
 
 errorMessage : ApplicationInfo -> Error -> Html Message
