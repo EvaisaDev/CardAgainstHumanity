@@ -506,19 +506,25 @@ h6 {
     color: #2196F3;
     background-color: transparent
 }
-.mui-btn--small{
+.scores-toggle{
 	background-color: rgba(0,0,0,0)
 }
-.mui-btn--small:active{
+.scores-toggle:active{
 	background-color: rgba(0,0,0,0)
 }
-.mui-btn--small:hover{
+.scores-toggle:hover{
 	background-color: rgba(0,0,0,0.3)
 }
+<<<<<<< HEAD
+.scores-toggle:focus{
+	background-color: rgba(0,0,0,0.5)
+}
+=======
 .mui-btn--small:focus{
 	background-color: rgba(0,0,0,0)
 }
 
+>>>>>>> parent of 3f4e8cf... ayaaaa
 .mui-btn--dark {
     color: #FFF;
     background-color: #424242

@@ -28,3 +28,4 @@
 
 # Compiled from elm.
 /public/javascripts/MassiveDecks.js
+public/stylesheets/mui.min.css
