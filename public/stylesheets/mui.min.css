@@ -472,24 +472,7 @@ h6 {
     border-radius: 50%;
     z-index: 1
 }
-.mui-btn--primary {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.4);
-}
-.mui-btn--primary:active,
-.mui-btn--primary:focus,
-.mui-btn--primary:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.5);
-	
-}
-.mui-btn--primary[disabled]:active,
-.mui-btn--primary[disabled]:focus,
-.mui-btn--primary[disabled]:hover {
-    color: #FFF;
-    background-color: rgba(0,0,0,0.3);
-	
-}
+
 .mui-btn--primary.mui-btn--flat {
     color: #2196F3;
     background-color: transparent
@@ -505,18 +488,6 @@ h6 {
 .mui-btn--primary.mui-btn--flat[disabled]:hover {
     color: #2196F3;
     background-color: transparent
-}
-.mui-btn--small{
-	background-color: rgba(0,0,0,0)
-}
-.mui-btn--small:active{
-	background-color: rgba(0,0,0,0)
-}
-.mui-btn--small:hover{
-	background-color: rgba(0,0,0,0.3)
-}
-.mui-btn--small:focus{
-	background-color: rgba(0,0,0,0)
 }
 
 .mui-btn--dark {
