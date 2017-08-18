@@ -267,7 +267,6 @@ startGameButton notOwner enoughPlayers enoughCards =
 addDefaultButton deckId =
     [ button
         [ class "mui-btn mui-btn--primary mui-btn--raised"
-        , disabled ()
         , onClick (ConfigureDecks (Request "CAHBS"))
         , title "Add default cards"
         ]
