@@ -575,6 +575,9 @@ h6 {
 .fa-check {
 	color:black;
 }
+.mui--divider-bottom {
+	background-image: url("/images/Logo.png");
+}
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
 .mui-btn--dark:hover {
