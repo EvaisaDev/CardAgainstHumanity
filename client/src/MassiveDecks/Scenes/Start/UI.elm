@@ -60,8 +60,11 @@ view model =
     in
         div [ id "start-screen" ]
             [ div [ id "start-screen-content", class "mui-panel" ]
-                ([ div [ class "logotop" ]
-                 ]
+                (
+				[ div [ id "logotop", class "logotop" ]
+                (
+				)
+				]
                     ++ (existingGames model.storage)
                     ++ [ Input.view model.nameInput
                        ]
