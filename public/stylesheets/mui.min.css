@@ -576,9 +576,10 @@ h6 {
 	color:black;
 }
 .logotop {
-	height: 250px;
+	height: 100px;
 	background-image: url("/images/Logo.png");
-	background-size: contain;
+	background-size: cover;
+	background-repeat:no-repeat;
 	
 }
 .mui-btn--dark:active,
