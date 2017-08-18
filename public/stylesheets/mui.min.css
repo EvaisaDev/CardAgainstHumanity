@@ -489,6 +489,15 @@ h6 {
     color: #2196F3;
     background-color: transparent
 }
+.mui-btn{
+	background-color: rgba(0,0,0,0.2)
+}
+.mui-btn:active{
+	background-color: rgba(0,0,0,0.4)
+}
+.mui-btn:hover{
+	background-color: rgba(0,0,0,0.3)
+}
 
 .mui-btn--dark {
     color: #FFF;
