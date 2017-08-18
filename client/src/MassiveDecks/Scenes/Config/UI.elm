@@ -216,7 +216,7 @@ emptyDeckListInfo display =
         [ ( "!!emptyInfo"
           , tr []
                 [ td [ colspan 4 ]
-                    [ Icon.icon "info-circle"
+                    [
                     , a
                         [ class "link"
                         , attribute "tabindex" "0"
