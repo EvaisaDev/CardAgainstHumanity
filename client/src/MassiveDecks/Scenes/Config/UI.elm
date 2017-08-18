@@ -210,33 +210,6 @@ deckLink id =
     a [ href ("https://www.cardcastgame.com/browse/deck/" ++ id), target "_blank", rel "noopener" ] [ text id ]
 
 
-emptyDeckListInfo : Bool -> List ( String, Html Message )
-emptyDeckListInfo display =
-    if display then
-        [ ( "!!emptyInfo"
-          , tr []
-                [ td [ colspan 4 ]
-                    [ Icon.icon "info-circle"
-                    , text " You will need to add at least one "
-                    , a [ href "https://www.cardcastgame.com/browse", target "_blank", rel "noopener" ] [ text "Cardcast deck" ]
-                    , text " to the game."
-                    , text " Not sure? Try "
-                    , a
-                        [ class "link"
-                        , attribute "tabindex" "0"
-                        , attribute "role" "button"
-                        , onClick (ConfigureDecks (Request "CAHBS"))
-                        ]
-                        [ text "clicking here to add the Cards Against Humanity base set" ]
-                    , text "."
-                    ]
-                ]
-          )
-        ]
-    else
-        []
-
-
 houseRule : Bool -> Bool -> HouseRule -> Html Message
 houseRule canNotChangeConfig enabled rule =
     let

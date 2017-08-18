@@ -51,8 +51,8 @@ subscriptions model =
 -}
 view : Lobby.Model -> Html ConsumerMessage
 view lobbyModel =
-    UI.view lobbyModel |> Html.map LocalMessage;
-	ConfigureDecks (Request "CAHBS")
+    UI.view lobbyModel |> Html.map LocalMessage
+	
 
 {-| Handles messages and alters the model as appropriate.
 -}
