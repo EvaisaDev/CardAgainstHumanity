@@ -83,7 +83,7 @@ reportUrl applicationInfo message =
         full =
             message ++ "\n\nApplication Info:\n\tVersion: " ++ version ++ "\n\tURL: " ++ applicationInfo.url
     in
-        "https://github.com/Lattyware/massivedecks/issues/new?body=" ++ full
+        "" ++ full
 
 
 errorMessage : ApplicationInfo -> Error -> Html Message
