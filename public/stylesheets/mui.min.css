@@ -523,7 +523,7 @@ h6 {
 .fa-ellipsis-h {
 		color:white
 }
-.next-round-button {
+#next-round-button {
 		background-image: url("/images/paper.png");
 }
 .mui-btn--dark:active,
