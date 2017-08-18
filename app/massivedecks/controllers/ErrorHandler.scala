@@ -24,9 +24,7 @@ class ErrorHandler @Inject()(getConfig: Config.Factory) extends HttpErrorHandler
       case 404 => ("Not Found", "the page you tried to access doesn't seem to exist")
       case _ => ("Client Error", "there was a problem with the request you made")
     }
-    NotFound(views.html.error(
-      config.url, config.version, statusCode, message, description,
-        bugReportBody(config, request.path, s"$statusCode", rawMessage))).as(HTML)
+
   }
 
   def onServerError(request: RequestHeader, exception: Throwable): Future[Result] = Future.successful {
