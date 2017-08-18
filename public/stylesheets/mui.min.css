@@ -498,10 +498,30 @@ h6 {
 .mui-btn:hover{
 	background-color: rgba(0,0,0,0.3)
 }
-
+.mui-btn:focus{
+	background-color: rgba(0,0,0,0.2)
+}
+.mui-btn[disabled]{
+	background-color: rgba(0,0,0,0.2)
+}
+.mui-btn[disabled]:active{
+	background-color: rgba(0,0,0,0.4)
+}
+.mui-btn[disabled]:hover{
+	background-color: rgba(0,0,0,0.3)
+}
+.mui-btn[disabled]:focus{
+	background-color: rgba(0,0,0,0.2)
+}
 .mui-btn--dark {
     color: #FFF;
     background-color: #424242
+}
+.fa-users {
+	color: white
+}
+.fa-ellipsis-h {
+		color:white
 }
 .mui-btn--dark:active,
 .mui-btn--dark:focus,
