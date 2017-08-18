@@ -307,7 +307,7 @@ notificationsMenuItem model =
             if not model.supported then
                 ( Just "Your browser does not support desktop notifications.", False )
             else if model.permission == Just BrowserNotifications.Denied then
-                ( Just "You have denied Massive Decks permission to display desktop notifications.", False )
+                ( Just "You have denied Rotten Fruits permission to display desktop notifications.", False )
             else
                 ( Nothing, model.enabled )
 

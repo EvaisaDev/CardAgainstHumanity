@@ -317,7 +317,7 @@ update message model =
 
 title : String
 title =
-    "Massive Decks"
+    "Rotten Fruits"
 
 
 newPlayerErrorHandler : API.NewPlayerError -> Message
