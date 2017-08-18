@@ -216,6 +216,7 @@ emptyDeckListInfo display =
         [ ( "!!emptyInfo"
           , tr []
                 [ td [ colspan 4 ]
+                    [ Icon.icon "info-circle"
                     , a
                         [ class "link"
                         , attribute "tabindex" "0"
@@ -224,7 +225,7 @@ emptyDeckListInfo display =
                         ]
                         [ text "Click here to add the default cards" ]
                     , text "."
-                    
+                    ]
                 ]
           )
         ]
