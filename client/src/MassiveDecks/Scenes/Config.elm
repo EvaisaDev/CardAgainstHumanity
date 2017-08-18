@@ -52,7 +52,7 @@ subscriptions model =
 view : Lobby.Model -> Html ConsumerMessage
 view lobbyModel =
     UI.view lobbyModel |> Html.map LocalMessage
-	
+
 
 {-| Handles messages and alters the model as appropriate.
 -}
@@ -72,7 +72,7 @@ update message lobbyModel =
             lobbyModel.config
     in
         case message of
-				(Request rawDeckId) ->
+            ConfigureDecks (Request rawDeckId) ->
                 let
                     deckId =
                         String.toUpper rawDeckId
