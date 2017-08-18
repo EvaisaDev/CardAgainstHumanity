@@ -60,7 +60,8 @@ view model =
     in
         div [ id "start-screen" ]
             [ div [ id "start-screen-content", class "mui-panel" ]
-                ([ h1 [ class "mui--divider-bottom" ] [ text "Rotten Fruits" ]
+                ([ a [ href "https://rottenfruits.herokuapp.com/", target "_blank", rel "noopener" ]
+                    [ Icon.icon "home", text "RottenFruits" ]
                  ]
                     ++ (existingGames model.storage)
                     ++ [ Input.view model.nameInput
@@ -68,7 +69,6 @@ view model =
                     ++ (Tabs.view (renderTab nameEntered gameCodeEntered model) model.tabs)
                 )
             ]
-
 
 renderTab : Bool -> Bool -> Model -> Tab -> List (Html Message)
 renderTab nameEntered gameCodeEntered model tab =
