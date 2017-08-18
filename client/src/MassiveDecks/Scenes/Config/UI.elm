@@ -170,7 +170,6 @@ deckList canNotChangeConfig decks loadingDecks deckId =
                     [ ( "!!emptyInfo", tr [] [ td [ colspan 4 ] [ text "No decks have been added yet." ] ] ) ]
                   else
                     []
-                , emptyDeckListInfo ((not canNotChangeConfig) && (List.isEmpty decks) && List.isEmpty loadingDecks)
                 , List.map loadedDeckEntry decks
                 , List.map loadingDeckEntry loadingDecks
                 , if (canNotChangeConfig) then
