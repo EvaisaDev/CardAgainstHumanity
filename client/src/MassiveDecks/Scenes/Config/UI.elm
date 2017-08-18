@@ -263,7 +263,6 @@ startGameButton notOwner enoughPlayers enoughCards =
             ]
             [ text "Start Game" ]
         ]
-		
 addDefaultButton deckId =
     [ button
         [ class "mui-btn mui-btn--primary mui-btn--raised"
