@@ -60,8 +60,7 @@ view model =
     in
         div [ id "start-screen" ]
             [ div [ id "start-screen-content", class "mui-panel" ]
-                ([ a [ href "https://rottenfruits.herokuapp.com/", target "_blank", rel "noopener" ]
-                    [ Icon.icon "home", text "RottenFruits" ]
+                ([ div [ class "logotop" ]
                  ]
                     ++ (existingGames model.storage)
                     ++ [ Input.view model.nameInput
