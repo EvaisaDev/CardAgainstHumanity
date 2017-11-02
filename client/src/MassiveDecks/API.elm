@@ -203,17 +203,6 @@ play gameCode secret ids =
         secret
 
 
-{-| Errors specific to skipping a player in the lobby.
-* `NotEnoughPlayers` - The number of active players would drop below the minimum if the given players were
-*                      skipped.
-* `PlayersNotSkippable` - One of the given players was not in a state where they could be skipped (i.e.: not
-*                         disconnected or timed out).
--}
-type SkipError
-    = NotEnoughPlayersToSkip Int
-    | PlayersNotSkippable
-
-
 {-| Make a request to skip the given players in the given lobby using the given secret to authenticate.
 -}
 skip : String -> Player.Secret -> List Player.Id -> Request SkipError ()
