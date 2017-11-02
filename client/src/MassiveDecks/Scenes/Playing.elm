@@ -306,10 +306,6 @@ skipErrorHandler error =
         API.NotEnoughPlayersToSkip required ->
             ErrorMessage <| Errors.New ("There are not enough players in the game to skip (must have at least " ++ (toString required) ++ ").") False
 
-        API.PlayersNotSkippable ->
-            ErrorMessage <| Errors.New "The players can't be skipped as they are not inactive." False
-
-
 addShownPlayed : Int -> Random.Seed -> ( List ShownCard, Random.Seed )
 addShownPlayed new seed =
     Random.step (Random.list new initialRandomPositioning) seed
